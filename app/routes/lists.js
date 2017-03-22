@@ -5,4 +5,9 @@ export default Ember.Route.extend({
     console.log();
     return this.get('store').findAll('list');
   },
+  actions: {
+    editList (list) {
+      this.transitionTo('list-edit', list);
+    }
+  }
 });
