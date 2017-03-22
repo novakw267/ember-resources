@@ -10,7 +10,6 @@ export default Ember.Route.extend({
       item.save();
     },
     deleteItem (item) {
-      console.log("yes?");
       item.destroyRecord();
     }
   }
